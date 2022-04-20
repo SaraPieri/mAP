@@ -25,10 +25,10 @@ for filename in os.listdir(folder):
             cy = float(line_list[2])
             w = float(line_list[3])
             h = float(line_list[4]) 
-            maxx = (cx + w/2) * w_img
-            minx = (cx - w/2) * w_img
-            maxy = (cy + h/2) * h_img
-            miny = (cy - h/2) * h_img 
+            maxx = int ((cx + w/2) * w_img)
+            minx = int((cx - w/2) * w_img)
+            maxy = int((cy + h/2) * h_img)
+            miny = int((cy - h/2) * h_img) 
 
             with open(folder_out+os.path.splitext(filename)[0]+".txt", 'w') as f_new:
                 #number.txt <class_name> <left> <top> <right> <bottom>
