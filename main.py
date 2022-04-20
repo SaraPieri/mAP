@@ -44,7 +44,7 @@ if args.set_class_iou is not None:
 # make sure that the cwd() is the location of the python script (so that every path makes sense)
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-GT_PATH = os.path.join('/home/sara.pieri/Documents/datasets/SeaDroneSee/val/labels')
+GT_PATH = os.path.join('/home/sara.pieri/Documents/mAP/input/ground-truth2')
 DR_PATH = os.path.join('/home/sara.pieri/Documents/results')
 # if there are no images then no animation can be shown
 IMG_PATH = os.path.join(os.getcwd(), 'input', 'images-optional')
